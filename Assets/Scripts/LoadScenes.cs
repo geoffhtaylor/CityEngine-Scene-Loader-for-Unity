@@ -106,7 +106,6 @@ public class LoadScenes : MonoBehaviour
 
     void Awake()
     {
-        /*
     #if UNITY_EDITOR
             // TODO Geof7015: Cleanup code below and parse scenes into "AddScene2BuildSettings()"
             // Adding Scenes to Build Settings
@@ -116,7 +115,6 @@ public class LoadScenes : MonoBehaviour
             AddSceneToBuild(Scenario2Model);
             AddSceneToBuild(Scenario3Model);
     #endif
-        */
         ScenariosAddedtoBuild = true;
     }
 
@@ -199,7 +197,7 @@ public class LoadScenes : MonoBehaviour
     {
         // Modify Scene Position. Remember Unity is "Left Hand Coord System" and Y is Up.
         xPos += 0;
-        yPos += 0;
+        float yPos = 0.1f;
         zPos += 0;
 
         // Call SceneLoader Script for loading Scene
